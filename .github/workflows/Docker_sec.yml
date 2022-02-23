@@ -9,3 +9,7 @@ jobs:
     - uses: azure/container-scan@v0
       with:
         image-name: alpine/git:latest
+    - uses: actions/upload-artifact@v2
+      with:
+          name: Sonar_scan_xml
+          path: Sonar_xml.xml
