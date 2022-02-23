@@ -1,3 +1,5 @@
+
+name: WW
 on: [push]
 
 jobs:
