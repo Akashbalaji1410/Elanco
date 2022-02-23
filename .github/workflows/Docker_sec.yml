@@ -6,6 +6,7 @@ jobs:
   build-secure-and-push:
     runs-on: ubuntu-latest
     steps:
+    - name: Scan
     - uses: azure/container-scan@v0
       with:
         image-name: alpine/git:latest
