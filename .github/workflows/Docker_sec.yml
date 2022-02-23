@@ -11,6 +11,7 @@ jobs:
       with:
         image-name: alpine/git:latest
     - name: Upload Artifact
+      if: always()
       uses: actions/upload-artifact@v2
       with:
           name: Sonar_scan_xml
