@@ -18,7 +18,7 @@ jobs:
             tags: user/app:latest
             load: true
       - name: Runs the container security scan
-        uses: tenable/container-security-action@v0
+        uses: tenable/container-security-action@v1
         id: consec
         with:
           repo_name: alpine/git
