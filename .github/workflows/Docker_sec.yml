@@ -11,8 +11,13 @@ jobs:
       with:
         image-name: alpine/git:latest
         continue-on-error: true
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+    - name: Download the release artifact
+      uses: actions/download-artifact@v2
       with:
-          name: Sonar_scan_xml
-          path: Sonar_xml.xml
+        name: release-${{ github.event.inputs.release }}
+        path: .serverless
+#     - name: Upload Artifact
+#       uses: actions/upload-artifact@v2
+#       with:
+#           name: Sonar_scan_xml
+#           path: Sonar_xml.xml
