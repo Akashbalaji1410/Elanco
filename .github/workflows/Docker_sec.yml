@@ -11,9 +11,6 @@ jobs:
       continue-on-error: true
       with:
         image-name: alpine/git:latest
-    - name: Scan1
-      run: echo ${{outputs.scan-report-path}}
-
 #       uses: actions/download-artifact@v2
 #       with:
 #         name: release-${{ github.event.inputs.release }}
