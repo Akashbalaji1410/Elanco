@@ -12,7 +12,7 @@ jobs:
       with:
         image-name: alpine/git:latest
     - run: echo ${{outputs.scan-report-path}}
-#     - name: Download the release artifact
+
 #       uses: actions/download-artifact@v2
 #       with:
 #         name: release-${{ github.event.inputs.release }}
