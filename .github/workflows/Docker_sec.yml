@@ -5,10 +5,10 @@ on: [push]
 jobs:
   build-secure-and-push:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - name: Scan
       uses: azure/container-scan@v0
+      continue-on-error: true
       with:
         image-name: alpine/git:latest
 #     - name: Download the release artifact
