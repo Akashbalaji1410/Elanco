@@ -11,6 +11,7 @@ jobs:
       continue-on-error: true
       with:
         image-name: alpine/git:latest
+        scan-report-path: report.xml
 #     - name: Download the release artifact
 #       uses: actions/download-artifact@v2
 #       with:
