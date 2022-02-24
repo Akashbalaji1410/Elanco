@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Scan
-      uses: azure/container-scan@v0 -x report_xml.xml
+      uses: azure/container-scan@v0 
       continue-on-error: true
       with:
         image-name: alpine/git:latest
