@@ -1,7 +1,12 @@
+name: WW
+on: [push]
 
-
+jobs:
+  build-secure-and-push:
+    runs-on: ubuntu-latest
+    steps:
     - name: Scan image
       uses: sysdiglabs/scan-action@v3
       with:
-        image-tag: "sysdiglabs/dummy-vuln-app:latest"
+        image-tag: "alpine/git:latest"
         sysdig-secure-token: ${{ secrets.SYSDIG_SECURE_TOKEN }}
