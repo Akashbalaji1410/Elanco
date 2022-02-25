@@ -1,4 +1,4 @@
-name: WW
+name: Sysdig_Workflow
 on: [push]
 
 jobs:
