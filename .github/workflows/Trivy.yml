@@ -14,7 +14,7 @@ jobs:
         with:
           image-ref: 'alpine/git:latest'
           format: 'sarif'
-          output: 'trivy-results.sarif'
+          output: 'Akashbalaji1410/Elanco/trivy-results.sarif'
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v1
