@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: anchore/scan-action@v3
+        continue-on-error: true
         id: scan
         with:
           image: "alpine/git:latest"
