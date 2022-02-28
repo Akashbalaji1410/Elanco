@@ -16,8 +16,8 @@ jobs:
           format: 'xml'
           output: 'Akashbalaji1410/Elanco/trivy-results.xml'
 
-      - name: Upload Trivy scan results 
-        uses: actions/upload-artifact@v2
-        with:
-            name: trivy-results.xml
-            path: Doc_report_xml.xml
+#       - name: Upload Trivy scan results 
+#         uses: actions/upload-artifact@v2
+#         with:
+#             name: trivy-results.xml
+#             path: Doc_report_xml.xml
