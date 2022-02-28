@@ -13,10 +13,11 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'alpine/git:latest'
-          format: 'sarif'
-          output: 'Akashbalaji1410/Elanco/trivy-results.sarif'
+          format: 'xml'
+          output: 'Akashbalaji1410/Elanco/trivy-results.xml'
 
-      - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v1
+      - name: Upload Trivy scan results 
+        uses: actions/upload-artifact@v2
         with:
-          sarif_file: 'trivy-results.sarif'
+            name: trivy-results.xml
+            path: Doc_report_xml.xml
